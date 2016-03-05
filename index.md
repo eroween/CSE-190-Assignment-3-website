@@ -41,11 +41,11 @@ and the vertex structure :
     }
 
 
-The datastructure is optimized to do the subdivision part, in order to subdivide the face into 4 subface we just need to allocate 4 new face.
+The data structure is optimized to do the subdivision part. In order to subdivide the face into 4 sub faces, we just need to allocate 4 new face and update the corresponding pointers.
 
 #### Subdivision
 
-The subdivision part is done recursively, because the subdivsion is done by “level”, we just need to call the subdivision on the upper face and it will transmit the order to subdivise itself into each child.
+The subdivision part is done recursively, given the fact that the subdivision is done by one level at the time. We just need to call the subdivision routine on the parent face and the recursive call will subdivide the face itself and each of its children.
 
 The same process is used in order to compute the data for the mesh rendering.
 
