@@ -8,8 +8,6 @@ layout: default
 
 For this milestone on Assignment 3 we implemented Catmull-Clark Subdivision by repeatedly subdividing the faces of the mesh into smaller faces. As a proof of concept we split the edges using the midpoint formula. However we intend to implement Catmull-Clark by finding the new vertices’ location using a weighted combination of older vertex position. This is a basic example of subdivision by approximation which follows a set of refining rules to reallocate the original vertices.
 
-{% include youtube.html id='chy8pF0clJU' %}
-
 The rules to be implemented are the following :
 
 1. At each iteration all faces are divided into four child faces.
